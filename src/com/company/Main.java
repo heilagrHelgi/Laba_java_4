@@ -7,15 +7,7 @@ import java.io.IOException;
 import java.util.*;
 import java.util.Scanner;
 
-/**System.out.println("Enter the directory to the desired file, including the csv file itself -> ");
-
- String directory = scanner.next();
-
- try {
-
- CsvReader csv = new CsvReader(directory);
-
- csv.reading();
+/**
  * Мейн
  * В нем выполняется считывание из файла csv, генерация id для 2 сущности, добавление в щбъект типа List людей из файла и печать.
  * "D:\\Лабы_ЖАВА\\laba4\\src\\com\\company\\foreign_names.csv"
