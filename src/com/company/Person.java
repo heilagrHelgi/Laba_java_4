@@ -18,6 +18,13 @@ public class Person {
 
 /**
  * Конструктор для Person для ввода данных
+ * @param idd - id пользователя
+ * @param nm - имя пользователя
+ * @param gndr - гендер
+ * @param slr - зарплата
+ * @param DOB - дата рождения
+ * @param t - для поля 2 сущности
+ * @param id_subd - для id 2 сущности
  */
     Person(String idd, String nm, String gndr, String slr, String DOB, String t, int id_subd)
     {

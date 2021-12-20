@@ -40,7 +40,7 @@ public class Main {
                 System.out.print(prsn.get(i).getId() + "; " + prsn.get(i).getName() + "; " + prsn.get(i).getGender() + "; " + prsn.get(i).getBirthDate() + "; " + prsn.get(i).getSubdTitle() + "; " + prsn.get(i).getSubdId() + "; " + prsn.get(i).getSalary() + "; ");
                 System.out.println();
             }
-            //System.out.print(prsn);
+
         } catch (Exception ex) {
 
             System.out.println(ex.getMessage());

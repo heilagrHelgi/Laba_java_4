@@ -12,6 +12,8 @@ public class Subdivision {
     public
 /**
  * Конструктор для этого класса с параметрами
+ * @param t - для названия подразделения
+ * @param id_subd - для создания ID
  */
     Subdivision(String t, int id_subd)
     {
