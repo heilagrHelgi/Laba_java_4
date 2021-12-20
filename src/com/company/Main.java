@@ -2,6 +2,7 @@ package com.company;
 
 import com.opencsv.CSVReader;
 
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
@@ -22,6 +23,10 @@ public class Main {
 
             FileReader file = new FileReader(directory);
             CSVReader reader = new CSVReader(file, ';');
+            if (reader == null)
+            {
+                throw new FileNotFoundException(directory);
+            }
             String[] nextStr;
             List<Person> prsn = new ArrayList<>();
 
@@ -35,6 +40,7 @@ public class Main {
                 System.out.print(prsn.get(i).getId() + "; " + prsn.get(i).getName() + "; " + prsn.get(i).getGender() + "; " + prsn.get(i).getBirthDate() + "; " + prsn.get(i).getSubdTitle() + "; " + prsn.get(i).getSubdId() + "; " + prsn.get(i).getSalary() + "; ");
                 System.out.println();
             }
+            //System.out.print(prsn);
         } catch (Exception ex) {
 
             System.out.println(ex.getMessage());
