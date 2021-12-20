@@ -35,7 +35,7 @@ public class Main {
             while ((nextStr = reader.readNext()) != null) {
                 Random rndm = new Random();
                 if (check == 0) {
-                    num = rndm.nextInt(25000);
+                    num = rndm.nextInt(4000);
                     check ++;
                 }
                 else {num++;}

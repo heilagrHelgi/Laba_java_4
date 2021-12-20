@@ -29,12 +29,12 @@ public class Person {
     Person(String idd, String nm, String gndr, String slr, String DOB, String t, int id_subd)
     {
 
-        id = idd;
-        name = nm;
-        genderOfThePerson = gndr;
-        salary = slr;
-        dateOfBirth = DOB;
-        subd = new Subdivision(t, id_subd);
+        this.id = idd;
+        this.name = nm;
+        this.genderOfThePerson = gndr;
+        this.salary = slr;
+        this.dateOfBirth = DOB;
+        this.subd = new Subdivision(t, id_subd);
     }
 
     /**

@@ -17,8 +17,8 @@ public class Subdivision {
  */
     Subdivision(String t, int id_subd)
     {
-        designation = t;
-        ID = id_subd;
+        this.designation = t;
+        this.ID = id_subd;
     }
 
     /**
