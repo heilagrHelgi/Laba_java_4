@@ -18,6 +18,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Пожалуйста, введите полный путь до нужного вам файла, включая само его название! ");
         String directory = scanner.next();
+        int check = 0;
+        int num = 0;
         try {
 
 
@@ -32,7 +34,11 @@ public class Main {
 
             while ((nextStr = reader.readNext()) != null) {
                 Random rndm = new Random();
-                int num = rndm.nextInt(25000);
+                if (check == 0) {
+                    num = rndm.nextInt(25000);
+                    check ++;
+                }
+                else {num++;}
                 prsn.add(new Person(nextStr[0], nextStr[1], nextStr[2], nextStr[5], nextStr[3], nextStr[4], num));
 
             }
